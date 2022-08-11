@@ -1,4 +1,4 @@
-# vue-canvas
+# Functional-component
 
 ## Project setup
 ```
