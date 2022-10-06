@@ -1,45 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Test 
-     :brands ="['Tesla', 'Bentley', 'Ferrari', 'Ford']">
-    </Test>
-    <Example>
-     Find More Cars
-    </Example>
+    <UserProfile />
   </div>
 </template>
 <script>
-import Test from './components/Test.vue'
-import Example from './example.js'
+import UserProfile from "./components/UserProfile.vue";
+
+
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Test,
-    Example,
-}
-}
+    UserProfile,
+
+  },
+};
 </script>
 
-<style>
+<style >
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+</style>
+
+<style module>
+.heading {
+  font-size: 50px;
+  font-weight: 900;
   text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
